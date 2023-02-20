@@ -1,6 +1,6 @@
 # Mage Demo
 
-Running Mage:
+Running:
 
 ```sh
 go run mage.go

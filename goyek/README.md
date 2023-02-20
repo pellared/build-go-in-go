@@ -1,9 +1,9 @@
-# Taskflow Demo
+# Goyek Demo
 
-Running taskflow:
+Running:
 
 ```sh
 go run ./build
 ```
 
-More info: <https://github.com/pellared/taskflow>.
+More info: <https://github.com/goyek/goyek>.

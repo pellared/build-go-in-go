@@ -1,6 +1,6 @@
 # Make Demo
 
-Running Make:
+Running:
 
 ```sh
 make
