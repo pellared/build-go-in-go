@@ -2,12 +2,7 @@ include common/go.mk
 
 .PHONY: all
 all: ## build pipeline
-all: clean fmt test
-
-.PHONY: clean
-clean: ## remove files created during build
-	$(call print-target)
-	rm -fv coverage.*
+all: fmt test
 
 .PHONY: test
 test: ## go test with race detector and code covarage
