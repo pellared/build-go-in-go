@@ -21,6 +21,5 @@ func All() {
 // Test runs go test with race detector and code covarage.
 func Test() error {
 	err := sh.Run("go", "test", "-race", "-covermode=atomic", "-coverprofile=coverage.out", "./...")
-	err = errors.Join(sh.Run("go", "tool", "cover", "-html=coverage.out", "-o", "coverage.html"))
-	return err
+	return errors.Join(err, sh.Run("go", "tool", "cover", "-html=coverage.out", "-o", "coverage.html"))
 }
